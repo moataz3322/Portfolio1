@@ -607,6 +607,9 @@ transition: var(--my-transation);
     line-height: 22px;
 }
 /* todo==========Team END================ */
+ .contact .container{
+    width: 60%;
+ }
 
 .contact .contact-icon i{
 padding: 16px;
@@ -627,7 +630,7 @@ transition: var(--my-transation);
 }
 
 
-.contact-form .name input {
+.contact-form  input {
 width: 35%;
 padding: 7px;
 border: none;
@@ -635,16 +638,23 @@ border-radius: 5px;
 background-color: #F4F4F4;
 }
 
+.contact input,textarea {
+width: 35%;
+padding: 7px;
+border: none;
+border-radius: 5px;
+background-color: #F4F4F4;
+}
 .contact-form .text-area{
     width: 71%;
     
 }
-.contact-form .text-area textarea{
+.contact textarea{
     background-color: #F4F4F4;
     border: none;
     border-radius: 5px;
 }
-.contact-form input,textarea:focus{
+.contact input , textarea:focus{
     outline: none;
 }
 .contact button{
@@ -729,6 +739,9 @@ transition: var(--my-transation);
 .contact-form .text-area{
     width: 100%;
 }
+ .contact .container{
+    width: 100% !important;
+ }
 
 
 }
@@ -745,4 +758,7 @@ transition: var(--my-transation);
 .contact-form .text-area{
     width: 100%;
 }
+ .contact .container{
+    width: 100% !important;
+ }
  }
