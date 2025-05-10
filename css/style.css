@@ -1,0 +1,748 @@
+html{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #fff;
+    font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgb(52, 52, 52);
+  
+}
+*,::after,::before{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.container:not(.navbar .container){
+    margin-top: 50px;
+}
+.head{
+    margin-top: 80px ;
+ }
+
+ h1,h2,h3,h4,h5,h6,.navbar-brand{
+    font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: rgb(52, 52, 52) ;
+ }
+ p{
+    color: rgb(116, 129, 130)
+;
+ }
+
+ :root{
+    --main-color:#1C1C1C;
+    --mon-font:font-family: "Montserrat", sans-serif;;
+   --my-transation:.5s all;
+
+ }
+
+ .main-title{
+    text-align: center;
+    position: relative;
+    
+   
+ }
+ .main-title h3{
+    position: relative;
+    z-index: 5;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 44px;
+ }
+ .main-title .title-dot{
+    
+    background-image: url(../imgs/dots.png);
+    height: 27%;
+    width: 16%;
+    background-position: center center;
+    background-repeat: repeat;
+    position: absolute  ;
+    top: 75%;
+    left: 42%;
+    
+ }
+
+ /* Todo============Global=============== */
+ /* todo============navbar START */
+
+ .navbar-brand{
+    font-weight: 800;
+font-size: 18px;
+line-height: 26px;
+color: #fff;
+ }
+ .my-nav{
+    background-color: transparent;
+    
+ }
+ .nav-link{
+    color: #F5F5F5!important;
+ }
+
+ 
+
+ .my-link{
+
+position: relative;
+  padding-bottom: 8px;
+ }
+
+.my-link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-color: var(--main-color);
+  transition: width 0.3s ease;
+  overflow: hidden;
+}
+
+
+.my-link.active::before {
+  width: 100%;
+} 
+/* !====For javaS========== */
+.my-nav.nav-scrolled {
+  background-color: white !important;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); }
+
+.my-nav.nav-scrolled .nav-link,
+.my-nav.nav-scrolled .navbar-brand {
+  color: black !important;
+}
+ /*!==============  nav end ==============*/
+
+ /* TODO=============HERO START========= */
+
+
+ .hero{
+    background-image: url(../imgs/bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    
+}
+.hero .hero-title{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .6); 
+}
+.hero .hero-title h1{
+    font-size: 50px;
+    line-height: 55px;
+    font-weight: 800;
+    color: white;
+}
+.hero .hero-title .title{
+    text-align: center;
+    position: relative;
+top: 50%;
+right: 50%;
+transform: translate(50% , -80%);
+}
+#typed3{
+    font-family: "Montserrat", sans-serif;
+
+    color: white;
+    font-size: 60px;
+    line-height: 72px;
+    font-weight: 200;
+}
+.hero-icon{
+    margin-top: 20px;
+}
+.hero-icon ul{
+    width: 10%;
+}
+.hero-icon ul li a{
+    font-size: 12px;
+    color: white;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+ /* TODO=============HERO END========= */
+/* todo============ABOUT START============== */
+
+
+.about .container .left img{
+    width: 100%;
+    display: block;
+    
+    position: relative;
+    z-index: 5;
+}
+
+.about .left .img-dot{
+    background-image: url(../imgs/dots.png);
+    height: 85%;
+    width: 75%;
+    background-position: center center;
+    background-repeat: repeat;
+    position: absolute  ;
+    bottom: -22px;
+    left: -22px;
+}
+
+.about .container .right .about-cap p{
+    color: rgb(116, 129, 130);
+    line-height: 24px;
+    font-size: 15px;
+ 
+}
+.about .container .right h3{
+    font-weight: 800;
+    font-size: 30px;
+
+line-height: 33px;
+
+}
+
+.progress-bar p span{
+    color: white;
+    padding: 0 10px;
+    font-size: 13px;
+}
+
+
+.progress-bar{
+background-color: var(--main-color);
+border-radius: 5px;
+}
+
+.progress{
+    height: 1.5rem;
+    background-color: #F5F5F5;
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.1) inset;
+
+}
+
+
+.about .right .first-btn{
+    padding: 10px 20px;
+    color:#F5F5F5;
+    background-color: var(--main-color);
+    border: 1px solid black;
+    border-radius: 6px;
+    transition: var(--my-transation);
+}
+
+.about .right .first-btn:hover{
+    background-color: white;
+color: #1C1C1C;
+
+
+}
+
+
+
+.about .right .sec-btn{
+    background-color: white;
+    padding: 10px 20px;
+color: #1C1C1C;
+border: 1px solid black;
+border-radius: 6px;
+transition: var(--my-transation);
+}
+.about .right .sec-btn:hover{
+    
+    color:#F5F5F5;
+    background-color: var(--main-color);
+    
+   
+    
+}
+
+/* todo===========servcies start =============*/
+
+
+
+
+
+.services{
+    background-color: #F7F7F7;
+    padding: 50px 0;
+}
+
+
+.services .container .row .card .icon span{
+    font-size: 30px;
+}
+
+.services .card-body .card-text{
+    color: rgb(116, 129, 130)
+    ;
+    word-spacing: 2px;
+}
+.services .container .row .card-title{
+color: rgb(52, 52, 52)
+;
+    font-weight: 800;
+   font-size: 18px;
+}
+.services .container .card{
+    
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 10px 20px -5px rgba(0, 0, 0, 0.1);
+    
+}
+.icon-circ{
+
+text-align: center;
+align-content: center;
+ padding: 20px;
+    border-radius: 50%;
+  background-color: #F4F4F4;
+  color: var(--main-color);
+  transition: var(--my-transation);
+}
+.services .container .card:hover .icon-circ{
+
+    background-color: var(--main-color);
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* todo===========servcies end ==============*/
+
+/* todo==================PORTFOLIO START */
+.portfolio .card-item{
+    position: relative;
+    overflow: hidden;
+    
+    
+}
+.portfolio .card-item img{
+   width: 100%;
+    display: block;
+}
+.portfolio .card-item .card-layer{
+    height: 97%;
+    width: 97%;
+    background-color: #fff;
+top: 15px;
+left: 6px;
+opacity: 0;
+transition: var(--my-transation);
+}
+.portfolio .card-item:hover .card-layer{
+
+    top: 6px;
+    opacity: 1;
+}
+.portfolio .card-item .card-layer .fig-caption{
+position: relative;
+
+top: -20px;
+transition: var(--my-transation);
+}
+.portfolio .card-item .card-layer .fig-caption h6 {
+    font-weight: 700;
+font-size: 12px;
+line-height: 13px;
+}
+.portfolio .card-item:hover .fig-caption{
+    top: 0;
+}
+
+.portfolio .card-item .card-layer .fig-icon i{
+    background-color: var(--main-color);
+    color: white;
+    font-size: 13px;
+    cursor: pointer;
+
+}
+
+.portfolio .card-item .card-layer i:hover {
+    background-color: white;
+    color: var(--main-color);
+    border: 1px solid black;
+
+}
+
+
+.portfolio .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    background-color: transparent !important;
+}
+.portfolio .nav-link{
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--main-color) !important;
+    line-height: 23px;
+    position: relative;
+}
+
+.portfolio .nav-link::before {
+    content: "";
+    position: absolute;
+    bottom: 11%;
+    left: 19%;
+    height: 2px;
+    width: 0%;
+    background-color: var(--main-color);
+    transition: width 0.3s ease;
+  }
+
+.nav-link.active::before {
+    width: 55%;
+  }
+
+
+
+/* todo==================PORTFOLIO END=============== */
+
+/* todo===============testimonials start ============*/
+
+.clients1{
+    background-color: #F7F7F7;
+    min-height: 20vh;
+    padding: 30px 0;
+}
+
+.clients1 .carousel .carousel-inner .carousel-item .img-container{
+    width: 10vh;
+    
+}
+
+.clients1 .carousel .carousel-inner .carousel-item img {
+width: 100%;      
+
+border-radius: 50%;
+position: relative;
+top: 50%;
+
+
+}
+.clients1 .carousel-caption{
+    padding: 10px;
+}
+.clients1 .carousel-item p {
+    width: 70%;
+    text-align: center;
+}
+
+.clients1 .carousel .carousel-inner .carousel-item{
+    min-height: 35vh;
+}
+
+.clients1 .carousel-indicators button{
+    box-sizing: border-box !important;
+   background-clip:unset !important;
+    background-color: #869791 !important;
+    border-radius: 50%;
+    width: 10px !important;
+    height: 1px !important;
+    border-bottom: 0 !important;
+}
+
+
+
+
+
+
+
+/* todo===============testimonials END ============*/
+
+/* todo ==========clients start================ */
+
+
+
+.clients{
+
+    min-height: 20vh;
+}
+
+
+
+.clients .container .col h3{
+    font-weight: 900;
+    font-size: 30px;
+}
+.clients .container .col span{
+    display: block;
+    color: black;
+    text-align: center;
+
+    font-size: 30px;
+}
+
+.clients .conatiner .carousel-item p {
+    color: rgb(116, 129, 130)
+;
+}
+.clients .conatiner .carousel-item h6{
+   
+    font-weight: 600;
+}
+.clients .container .col p span{
+    
+color: rgb(116, 129, 130)
+;
+font-size: 15px;
+font-weight: 600;
+line-height: 24px;
+}
+
+
+
+
+
+
+
+
+/* todo ==========client End================ */
+
+/* todo==========team start================ */
+.team{
+    background-color: #F7F7F7;
+  
+}
+.team .container .card{
+    --bs-card-inner-border-radius: 0;
+    --bs-card-border-radius:0 0 10px 10px;
+}
+.team .container .card-layer{
+position: absolute;
+        background-color:rgba(255, 255, 255, .91);
+
+    width: 95%;
+    height: 79%;
+    top: 6px;
+    left: 11px;
+}
+
+.team .container .card-layer .card-icon{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-25%,-25%);
+}
+.team .container .card-layer .card-icon i{
+    font-size: 20px;
+    padding: 10px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    color: white;
+   
+
+}
+
+
+.team .container .card-layer .card-icon i:hover{
+    background-color: white;
+    border: 1px solid black;
+    color: var(--main-color);
+    
+}
+.team .container  .card .card-layer{
+    transition: var(--my-transation);
+    opacity: 0;
+     transform: rotateY(180deg) scale(0.5);
+  
+}
+.team .container  .card:hover .card-layer{
+   transform: rotateY(360deg) scale(1);
+  opacity: 1;
+}
+
+.team .container  .card .card-img img {
+transition: var(--my-transation);
+
+
+
+}
+.team .container .card :hover img{
+    transform: scale(1.2);
+}
+
+
+
+.team .card .card-body{
+    background-color: #5C5C5C;
+    border-radius: 0 0 10px 10px;
+}
+.team .card-body h5{
+    font-weight: 700;
+    line-height: 22px;
+}
+/* todo==========Team END================ */
+
+.contact .contact-icon i{
+padding: 16px;
+background-color: rgb(238, 238, 238)
+;
+font-size: 25px;
+border-radius: 50%;
+text-align: center;
+align-items: center;
+transition: var(--my-transation);
+}
+.contact .contact-icon:hover i {
+    background-color: var(--main-color);
+    color: white;
+}
+.contact .contact-icon h6{
+    font-weight: 700;
+}
+
+
+.contact-form .name input {
+width: 35%;
+padding: 7px;
+border: none;
+border-radius: 5px;
+background-color: #F4F4F4;
+}
+
+.contact-form .text-area{
+    width: 71%;
+    
+}
+.contact-form .text-area textarea{
+    background-color: #F4F4F4;
+    border: none;
+    border-radius: 5px;
+}
+.contact-form input,textarea:focus{
+    outline: none;
+}
+.contact button{
+    padding: 10px 40px;
+    border: 1px solid black;
+    background-color: var(--main-color);
+    color: white;
+border-radius: 5px;
+transition: var(--my-transation);
+}
+
+.contact button:hover{
+    background-color: white;
+    border: 1px solid black;
+    color: var(--main-color);
+}
+/* !======Contact end======== */
+/* todo=====Footer==== */
+
+.footer{
+    background-color: #1C1C1C;
+}
+
+/* todo========== lodiiing =============*/
+
+#loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1050;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+
+.spinner {
+  border: 8px solid #f3f3f3;  
+  border-top: 8px solid #888; 
+  border-radius: 50%;  
+  width: 60px;
+  height: 60px;
+  animation: fadeSpin 1.5s ease-in-out infinite; 
+}
+
+
+@keyframes fadeSpin {
+  0% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  50% {
+    transform: rotate(180deg);
+    opacity: 0.5; 
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 1;
+  }
+}
+
+
+
+/* !=============lodiiing End================*/
+
+@media (max-width: 576px) {
+    .clients1 .carousel-item p {
+    width: 100%;
+    text-align: center;
+}
+
+
+.contact .name input{
+    width: 100%;
+    margin: 10px;
+}
+.contact-form .text-area{
+    width: 100%;
+}
+
+
+}
+
+@media (max-width: 768px) {
+
+    .contact .name{
+    flex-wrap: wrap;
+}
+.contact .name input{
+    width: 100%;
+    margin: 10px;
+}
+.contact-form .text-area{
+    width: 100%;
+}
+ }
